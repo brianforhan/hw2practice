@@ -257,7 +257,11 @@ puts ""
 # Query the movies data and loop through the results to display the movies output
 # TODO!
 
-
+movies = Moviesv2.all
+for moviesv2 in movies
+    person = Person.where(id: moviesv2.person_id)[0]
+    puts "#{moviesv2.title} #{moviesv2.year_released} - #{moviesv2.rated} #{person.Name}"
+end
 
 # Prints a header for the cast output
 puts ""
@@ -267,3 +271,10 @@ puts ""
 
 # Query the cast data and loop through the results to display the cast output for each movie
 # TODO!
+
+roles = Role.all 
+for role in roles
+    moviesv2 = Moviesv2.where(id: role.movie_id)[0]
+    person = Person.where(id: role.person_id)[0]
+    puts "#{moviesv2.title} #{person.Name} #{role.character_name} "
+end
