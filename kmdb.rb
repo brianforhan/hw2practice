@@ -70,12 +70,114 @@
 # Use `Model.destroy_all` code.
 # TODO!
 
+Movie.destroy_all
+Person.destroy_all
+Moviesv2.destroy_all
+Role.destroy_all
+
 # Generate models and tables, according to the domain model
 # TODO!
 
 # Insert data into your database that reflects the sample data shown above
 # Do not use hard-coded foreign key IDs.
 # TODO!
+
+values = { title: "Batman Begins", year_released: "2005", rated: "PG-13"}
+moviesv2 = Moviesv2.new(values)
+moviesv2.save
+
+values = { title: "The Dark Knight", year_released: "2008", rated: "PG-13"}
+moviesv2 = Moviesv2.new(values)
+moviesv2.save
+
+values = { title: "The Dark Knight Rises", year_released: "2012", rated: "PG-13"}
+moviesv2 = Moviesv2.new(values)
+moviesv2.save
+
+values = { Name: "Christian Bale"}
+people = Person.new(values)
+people.save
+
+values = { Name: "Michael Caine"}
+people = Person.new(values)
+people.save
+
+values = { Name: "Liam Neeson"}
+people = Person.new(values)
+people.save
+
+values = { Name: "Katie Holmes"}
+people = Person.new(values)
+people.save
+
+values = { Name: "Gary Oldman"}
+people = Person.new(values)
+people.save
+
+values = { Name: "Heath Ledger"}
+people = Person.new(values)
+people.save
+
+values = { Name: "Aaron Eckhart"}
+people = Person.new(values)
+people.save
+
+values = { Name: "Maggie Gyllenhaal"}
+people = Person.new(values)
+people.save
+
+values = { Name: "Tom Hardy"}
+people = Person.new(values)
+people.save
+
+values = { Name: "Joseph Gordon-Levitt"}
+people = Person.new(values)
+people.save
+
+values = { Name: "Anne Hathaway"}
+people = Person.new(values)
+people.save
+
+values = { character_name: "Bruce Wayne"}
+role = Role.new(values)
+role.save
+
+values = { character_name: "Alfred"}
+role = Role.new(values)
+role.save
+
+values = { character_name: "Ra's Al Ghul"}
+role = Role.new(values)
+role.save
+
+values = { character_name: "Rachel Dawes"}
+role = Role.new(values)
+role.save
+
+values = { character_name: "Commissioner Gordon"}
+role = Role.new(values)
+role.save
+
+values = { character_name: "Joker"}
+role = Role.new(values)
+role.save
+
+values = { character_name: "Harvey Dent"}
+role = Role.new(values)
+role.save
+
+values = { character_name: "Bane"}
+role = Role.new(values)
+role.save
+
+values = { character_name: "John Blake"}
+role = Role.new(values)
+role.save
+
+values = { character_name: "Selina Kyle"}
+role = Role.new(values)
+role.save
+
 
 # Prints a header for the movies output
 puts "Movies"
