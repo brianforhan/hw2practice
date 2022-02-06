@@ -142,6 +142,18 @@ values = { character_name: "Bruce Wayne"}
 role = Role.new(values)
 role.save
 
+values = { character_name: "Bruce Wayne"}
+role = Role.new(values)
+role.save
+
+values = { character_name: "Bruce Wayne"}
+role = Role.new(values)
+role.save
+
+values = { character_name: "Alfred"}
+role = Role.new(values)
+role.save
+
 values = { character_name: "Alfred"}
 role = Role.new(values)
 role.save
@@ -151,6 +163,14 @@ role = Role.new(values)
 role.save
 
 values = { character_name: "Rachel Dawes"}
+role = Role.new(values)
+role.save
+
+values = { character_name: "Rachel Dawes"}
+role = Role.new(values)
+role.save
+
+values = { character_name: "Commissioner Gordon"}
 role = Role.new(values)
 role.save
 
