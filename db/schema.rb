@@ -10,37 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_06_201014) do
-
-  create_table "movies", force: :cascade do |t|
-    t.string "title"
-    t.string "year_released"
-    t.string "rated"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "moviesv2s", force: :cascade do |t|
-    t.string "title"
-    t.string "year_released"
-    t.string "rated"
-    t.integer "person_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "people", force: :cascade do |t|
-    t.string "Name"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "roles", force: :cascade do |t|
-    t.string "character_name"
-    t.integer "movie_id"
-    t.integer "person_id"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
+ActiveRecord::Schema.define(version: 0) do
 
 end
